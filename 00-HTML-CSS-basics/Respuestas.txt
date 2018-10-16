@@ -1,0 +1,17 @@
+2.3 How could you add weight to the global font definition to win over the classes added by point 3?
+
+To add something global you have to use 
+*{
+   *code to modify
+}
+
+In this case, the code to modify would be font-size: *numer* px;
+
+----------------------------------------------------------------------------------------------------------------------
+Imagine there is a declaration like class=”oh-no-inline-styles” style=”background:red” and you need to change the background to green without changing the inline style. How could you accomplish this?
+
+I would use the following code
+
+.oh-no-inline-styles{
+    background-color: green !important;
+}
