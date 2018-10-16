@@ -1,0 +1,84 @@
+*{
+
+    border-radius: 15px;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.containe{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+header{
+    background: red;
+    text-align: center;
+    height: 70px;
+    width: auto;
+    margin: 5px;
+}
+footer{
+    background: blue;
+    text-align: center;
+    height: 70px;
+    clear: both;
+}
+aside{
+    background: green;
+    width: 310px;
+    float: right;
+    height: 500px;
+    margin: 10px;
+}
+nav{
+    background: yellow;
+    width: 310px;
+    float: left;
+    height: 500px;
+    margin: 10px;
+}
+section{
+    width: 630px;
+    float: left;
+    margin: 10px;
+    background: grey;
+}
+section footer{
+    background: violet;
+    margin: 5px;
+    height: 60px;
+    float: none;
+}
+section header{
+    background: brown;
+    margin: 5px;
+    height: 60px;
+    
+}
+section article{
+    background: white;
+    margin: 5px;
+    height: 350px;
+}
+.header{
+    font-size: 46px;
+    background: magenta;
+}
+.footer{
+    font-size: 10px;
+    background: magenta;
+}
+.content{
+    font-size: 14px;
+}
+.navigation{
+    font-size: 12px;
+    background: blue;
+}
+.sidebar{
+    font-size: 10px;
+}
