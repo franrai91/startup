@@ -1,0 +1,106 @@
+html {  
+  box-sizing: border-box;
+  font-size: 30;
+  font-family: 'Times New Roman', Times, serif;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Small screens (default) */
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 80%;
+}
+.imagen {
+  margin: 2px 2px;
+  width: 100%;
+}
+.elemento {
+  background-color: white;
+  border: 2px;
+  opacity: 1;
+  position: relative;
+}
+.columna {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} 
+.columna.columna-2 {
+  width: 66.7%;
+}
+.columna.columna-1 {
+  width: 33.3%;
+} 
+  .elemento .descripcion {
+    background-color: grey;
+    color: white;
+    height: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .elemento:hover .descripcion {
+    background-color: grey;
+    background-color: darkslategrey;
+    opacity: 0.9;
+  }
+
+  .cuerpo:before,
+  .cuerpo:after {
+    content: " ";
+    display: table;
+  }
+  
+  .cuerpo:after {
+    clear: both;
+  }
+  
+  .cuerpo {
+    *zoom: 1;
+  }
+  @media all and (max-width: 700){
+
+    .elemento {
+      width: 100%;
+    }
+  
+  }
+  
+  @media all and (max-width: 1080px) and (min-width: 700px) {
+  
+    .elemento {
+      width: 50%;
+    }
+  
+  }
+  
+  @media all and (min-width: 1080px) {
+  
+    .elemento {
+      width: 33%;
+    }
+  
+  }
