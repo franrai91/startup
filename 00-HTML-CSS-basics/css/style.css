@@ -1,84 +1,85 @@
 *{
-
     border-radius: 15px;
+    box-sizing: content-box;
+ 
 }
 html{
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
 }
-.containe{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.contine{
+ 
+    min-width: 350px;
     position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
 }
 
 header{
-    background: red;
     text-align: center;
-    height: 70px;
+    height: 5%;
     width: auto;
+    
     margin: 5px;
 }
 footer{
-    background: blue;
     text-align: center;
     height: 70px;
     clear: both;
 }
-aside{
-    background: green;
-    width: 310px;
-    float: right;
-    height: 500px;
-    margin: 10px;
-}
-nav{
-    background: yellow;
-    width: 310px;
-    float: left;
-    height: 500px;
-    margin: 10px;
-}
 section{
-    width: 630px;
-    float: left;
-    margin: 10px;
-    background: grey;
+    width: 52%;
+    display: inline-block;
+  
+   height: 100%;
 }
 section footer{
-    background: violet;
-    margin: 5px;
-    height: 60px;
-    float: none;
+    margin: 2px;
+    height: 13%;
+   
 }
 section header{
-    background: brown;
-    margin: 5px;
-    height: 60px;
+    
+    
+    height: 13%;
     
 }
 section article{
-    background: white;
-    margin: 5px;
-    height: 350px;
+   
+   
+    height: 70%;
 }
 .header{
     font-size: 46px;
-    background: magenta;
+    
 }
 .footer{
     font-size: 10px;
-    background: magenta;
+    margin: 5px;
 }
 .content{
     font-size: 14px;
 }
 .navigation{
     font-size: 12px;
-    background: blue;
+    width: 23%;
+    display: inline-block;
+    height: 100%;
+    margin: 5px;
 }
 .sidebar{
+
     font-size: 10px;
+    width: 23%;
+    display: inline-block;
+    height: 100%;
+    margin:5px;
 }
+[class*="a"]:not([class$="r"]) {
+	background-color: blue;
+}
+[class$="r"] {
+	background-color: magenta;
+}
+
