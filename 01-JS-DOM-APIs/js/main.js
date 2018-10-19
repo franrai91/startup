@@ -3,6 +3,6 @@ function hacerFadeIn(){
     elementFadeIn.classList.remove("ocultado");
     elementFadeIn.classList.add("mostrado");
 }
-function elboton(){
+function mensajeAlerta(){
     alert("Mensaje de alerta!");
 }
