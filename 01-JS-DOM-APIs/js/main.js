@@ -43,4 +43,20 @@ function reusable(configuracion) {
         httpRqs.send();
     })  
 };
+function traerConParametros(value){
+    value = document.getElementById("valorUsuario").value;
+    var configurar = {};
+    configurar.method = 'GET';
+    configurar.url = 'https://api.github.com/search/repositories?q=' + value;
 
+    document.getElementById("repositores").innerHTML = '';
+
+    reusable(configurar).then(response =>{
+        var objeto = JSON.parse(response);
+        
+        objeto.items.forEach(elemento => {
+            document.getElementById("repositores").innerHTML += "<li>" + elemento["name"] + "</li>";
+        });
+    })
+    .catch(error => alert("cuidadooo"));    
+};
