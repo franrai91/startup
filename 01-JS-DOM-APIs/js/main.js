@@ -60,3 +60,26 @@ function traerConParametros(value){
     })
     .catch(error => alert("cuidadooo"));    
 };
+function crearMatriz(matriz = [[14,25,78,2], [76,35,48], [98,37,81,88,91], [95,25,13]]){
+    var seccion = document.getElementById("matriz");
+    var tablaGeneral = document.createElement('table');
+    var cuerpoTabla = document.createElement('tbody');
+
+    var largo = matriz.length;
+    for(i=0;i<largo;i++){
+        var fila = document.createElement('tr');
+        var elemento = matriz[i].length;
+
+        for(n=0;n<elemento;n++){
+            var columna = document.createElement('td');
+            var node = document.createTextNode(matriz[i][n]);
+
+            columna.appendChild(node);
+            fila.appendChild(columna);
+        }
+
+        cuerpoTabla.appendChild(fila);
+    }
+    tablaGeneral.appendChild(cuerpoTabla);
+    seccion.appendChild(tablaGeneral);
+}
