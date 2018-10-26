@@ -1,17 +1,18 @@
-class movie{
+class movie extends eventEmitter {
     constructor(tempTitle,tempYear,tempDuration){
+        super();
         this.title = tempTitle;
         this.year = tempYear;
         this.duration = tempDuration;
     }
     play(){
-        console.log("Playing the movie");
+        this.emit("Play");
     }
     pause(){
-        console.log("Pause the movie");
+        this.emit("Pause");
     }
     resume(){
-        console.log("Resume the movie");
+        this.emit("Resume");
     }
 }
 class actor{
