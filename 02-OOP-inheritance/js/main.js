@@ -26,6 +26,14 @@ class EventEmitter{
         }
     }
 }
+var socialMixing = {
+    share(friendName) {
+        console.log(friendName + " share " + this.title);
+    },
+    like(friendName){
+        console.log( friendName + ' like ' + this.title);
+    }
+}
 class Movie extends EventEmitter {
    
     constructor(tempTitle,tempYear,tempDuration){
@@ -33,6 +41,7 @@ class Movie extends EventEmitter {
         this.title = tempTitle;
         this.year = tempYear;
         this.duration = tempDuration;
+        Object.assign(this, socialMixing);
     }
     play(){
        this.emit("Play");
@@ -99,4 +108,6 @@ function createMovie(){
     
     newest.on("play",logge.log("play"));
     newest.play();
+
+    newest.share("Juan");
 }
