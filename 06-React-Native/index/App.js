@@ -8,6 +8,7 @@ export default class App extends React.Component {
       <ScrollView horizontal={true} style={{flexDirection: 'row',height: 100,padding: 20,}}>
         <View style={styles.newView}>
           <Text >This is the first text</Text>
+          <Image style={{width:100, height:100}} source= {require ('./img/image.png')}></Image>
         </View>
         <View style={styles.anotherView}>
         <Text style={{fontSize:40,color:'red',fontWeight:'bold'}}>
@@ -19,8 +20,8 @@ export default class App extends React.Component {
           <Text style={{color:'violet',fontSize:27}}>This is the last text</Text>
         </View>
         <View style={styles.anotherView}>
-          <Image style={{width:100, height:100}} source= {require ('./img/image.png')}></Image>
-          <Image style={{width:100, height:100}} source= {{uri: 'https://t1.kn3.net/taringa/2/9/4/1/F/8/spideriron/C8E.jpg'}}></Image>
+          
+          <Image style={{width:240, height:240}} source= {{uri: 'https://t1.kn3.net/taringa/2/9/4/1/F/8/spideriron/C8E.jpg'}}></Image>
         </View>
       </ScrollView>
       
