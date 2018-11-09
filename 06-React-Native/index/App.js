@@ -7,10 +7,16 @@ export default class App extends React.Component {
     return (
       <ScrollView horizontal={true} style={{flexDirection: 'row',height: 100,padding: 20,}}>
         <View style={styles.newView}>
+          <Text >This is the first text</Text>
         </View>
         <View style={styles.anotherView}>
+        <Text style={{fontSize:40,color:'red',fontWeight:'bold'}}>
+          This is the second text, with diferent size
+          <Text style={{fontSize:20,color:'white', fontStyle:'italic',fontWeight:'normal'}}>And with nesting</Text>
+          </Text>
         </View>
         <View style={styles.thirdView}>
+          <Text style={{color:'violet',fontSize:27}}>This is the last text</Text>
         </View>
         <View style={styles.anotherView}>
         </View>
