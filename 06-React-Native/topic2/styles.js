@@ -13,22 +13,23 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
         height: 100,
         width: 100,
-        margin: 15,
         alignSelf: 'flex-start'
     },
     purpleBox: {
         backgroundColor: 'purple',
         height: 150,
         width: 150,
-        margin: 15,
+
     },
     whiteBox: {
         backgroundColor: 'white',
         height: 250,
         width: 250,
-        margin: 15,
-        
     },
+    box: {
+        margin: 15,
+        borderRadius: 10,
+    }
 })
 
 export default styles
