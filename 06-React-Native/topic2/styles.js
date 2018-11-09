@@ -5,7 +5,7 @@ const height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'column',
+        flexDirection: 'row',
         backgroundColor: '#1482FE',
         flex: 1,
     },
@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
     },
     purpleBox: {
         backgroundColor: 'purple',
-        height: 150,
-        width: 150,
+        height: 100,
+        width: 100,
 
     },
     whiteBox: {
         backgroundColor: 'white',
-        height: 250,
-        width: 250,
+        height: 100,
+        width: 100,
     },
     box: {
         margin: 15,
