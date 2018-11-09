@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Platform } from 'react-native';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -6,9 +6,16 @@ const height = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'column',
-        backgroundColor: '#1482FE',
         flex: 1,
         justifyContent: 'space-between',
+        ...Platform.select({
+            ios:{
+                backgroundColor: 'grey',
+            },
+            android:{
+                backgroundColor: 'green',
+            },
+        }),
     },
     redBox: {
         backgroundColor: 'red',
