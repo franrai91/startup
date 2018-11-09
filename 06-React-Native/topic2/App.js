@@ -6,9 +6,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={[styles.container]}>
-        <View style={[styles.redBox, styles.box]}></View>
-        <View style={[styles.purpleBox, styles.box]}></View>
+        <View style={[styles.redBox, styles.box]}></View>       
         <View style={[styles.whiteBox, styles.box]}></View>
+        <View style={[styles.purpleBox, styles.box]}></View>
       </View>
     );
   }

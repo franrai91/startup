@@ -5,9 +5,10 @@ const height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         backgroundColor: '#1482FE',
         flex: 1,
+        justifyContent: 'space-between',
     },
     redBox: {
         backgroundColor: 'red',
@@ -19,12 +20,13 @@ const styles = StyleSheet.create({
         backgroundColor: 'purple',
         height: 100,
         width: 100,
-
+        alignSelf: 'flex-start',
     },
     whiteBox: {
         backgroundColor: 'white',
         height: 100,
         width: 100,
+        alignSelf: 'flex-start'
     },
     box: {
         margin: 15,
