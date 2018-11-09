@@ -12,24 +12,27 @@ const styles = StyleSheet.create({
     },
     redBox: {
         backgroundColor: 'red',
-        height: 100,
+        height: height * .5,
         width: 100,
+  
         alignSelf: 'flex-start'
     },
     purpleBox: {
         backgroundColor: 'purple',
-        height: 100,
+        height: height * .2,
         width: 100,
+        
         alignSelf: 'flex-start',
     },
     whiteBox: {
         backgroundColor: 'white',
-        height: 100,
+        height: height * .3,
         width: 100,
+      
         alignSelf: 'flex-start'
     },
     box: {
-        margin: 15,
+        margin: 0,
         borderRadius: 10,
     }
 })
