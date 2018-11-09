@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default class App extends React.Component {
@@ -19,6 +19,8 @@ export default class App extends React.Component {
           <Text style={{color:'violet',fontSize:27}}>This is the last text</Text>
         </View>
         <View style={styles.anotherView}>
+          <Image style={{width:100, height:100}} source= {require ('./img/image.png')}></Image>
+          <Image style={{width:100, height:100}} source= {{uri: 'https://t1.kn3.net/taringa/2/9/4/1/F/8/spideriron/C8E.jpg'}}></Image>
         </View>
       </ScrollView>
       
