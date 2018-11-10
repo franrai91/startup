@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import AppTextInput from './AppTextInput.js';
 
 export default class App extends React.Component {
   constructor(props){
@@ -16,7 +17,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.inputType} onPress={this.handleOnPress}>
-          <TextInput placeholder="Write over here" onChange={(text)=> this.setState({text})} value={this.state.text}></TextInput>
+        <AppTextInput placeholder="Write over here" type="password" onChangeText={(text) => this.setState({text})} value={this.state.text}/>
         </TouchableOpacity>
       </View>
     );
