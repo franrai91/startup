@@ -11,5 +11,21 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    button: {
+    alignItems: 'center',
+    padding: 10,
+    borderRadius: 50,
+    margin: 10
+    },
+    primaryButton: {
+    backgroundColor: 'darkcyan',
+    },
+    primaryButtonText: {
+    color: 'white'
+    },
+    secundaryButton: {
+    borderWidth: 1,
+    borderColor: 'grey'
+    },
   });
 export default styles
